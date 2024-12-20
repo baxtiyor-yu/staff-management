@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vOZpxrYcQ78=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\WINDOWS 11\\Desktop\\trySynel\\projectStaff2\\Synel-staff.Application\\Synel-staff.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\WINDOWS 11\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
+    "C:\\Users\\WINDOWS 11\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

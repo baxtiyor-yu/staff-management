@@ -1,0 +1,57 @@
+html {
+  font-size: 14px;
+  display:flex;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+footer{
+    margin-top: auto;
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1400px;
+    }
+}
+
+.dt-length > label{
+    margin-left: 10px;
+}
+
+#toast-container > div {
+    width: 500px;
+}
+
+.toast-message{
+    font-size: 25px;
+}
+
+#importForm{
+    display: flex;
+}
+
+#importForm > button{
+    margin-left: 10px;
+}

@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Employees";
+}
+
+@model IEnumerable<Synel_staff.Domain.Entities.Employee>
+
+<div style="width: 400px">
+    <h3>Import CSV File</h3>
+    <form id="importForm" asp-action="index" method="post" enctype="multipart/form-data" class="mt-4">
+        <div class="form-group">
+            <input type="file" name="csvFile" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Import</button>
+    </form>
+</div>
+
+@if (Model != null && Model.Any())
+{
+    <h4 class="mt-5">List of employees</h4>
+    <table class="display mt-4" id="myTable">
+        <thead>
+            <tr>
+                <th>#Payroll</th>
+                <th>Forenames</th>
+                <th>Surname</th>
+                <th>DOB</th>
+                <th>Tel</th>
+                <th>Mobile</th>
+                <th>Address</th>
+                <th>Address2</th>
+                <th>Postcode</th>
+                <th>EMailHome</th>
+                <th>StartDate</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
+                <tr>
+                    <td>@employee.PayrollNumber</td>
+                    <td>@employee.Forenames</td>
+                    <td>@employee.Surname</td>
+                    <td>@employee.DateOfBirth</td>
+                    <td>@employee.Telephone</td>
+                    <td>@employee.Mobile</td>
+                    <td>@employee.Address</td>
+                    <td>@employee.Address2</td>
+                    <td>@employee.Postcode</td>
+                    <td>@employee.EMailHome</td>
+                    <td>@employee.StartDate</td>
+                    <td><a asp-action="Edit" asp-route-id="@employee.Id" class="btn btn-primary"><i class="bi bi-pencil"></i></a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
