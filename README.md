@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1>Staff Management App</h1>
+  <h1>Staff Management Solutions</h1>
 </div>
 
 ## About App
